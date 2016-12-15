@@ -10,6 +10,16 @@ import javax.servlet.http.*;
 // Extend HttpServlet class
 public class LogIn extends HttpServlet {
 
+    /**
+     *
+     * Funcio que reconeix l'usuari a l'hora d'accedir a fleupload.jsp depepent de la llista d'usuaris.
+     * També es crea la cookie de l'usuari corresponent.
+     *
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
     public void doPost(HttpServletRequest request,
                       HttpServletResponse response)
             throws ServletException, IOException {

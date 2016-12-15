@@ -10,6 +10,15 @@ public class LogOut extends HttpServlet {
 
     }
 
+    /**
+     *
+     * Funcio que fa posible la redirecció a la pagina principal.
+     *
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
     public void doGet(HttpServletRequest request,
                       HttpServletResponse response)
             throws ServletException, IOException {

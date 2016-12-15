@@ -7,6 +7,10 @@ import java.util.*;
 // Implements Filter class
 public class LogFilter implements Filter  {
 
+    /**
+     * @param config
+     * @throws ServletException
+     */
     public void init(FilterConfig config)
             throws ServletException {
         // Get init parameter
@@ -16,6 +20,16 @@ public class LogFilter implements Filter  {
         System.out.println("Test Param: " + testParam);
     }
 
+    /**
+     *
+     * Funcio que fa de filtre per si l'email existeix avançar a fileupload.
+     *
+     * @param request
+     * @param response
+     * @param chain
+     * @throws java.io.IOException
+     * @throws ServletException
+     */
     public void  doFilter(ServletRequest request,
                           ServletResponse response,
                           FilterChain chain)

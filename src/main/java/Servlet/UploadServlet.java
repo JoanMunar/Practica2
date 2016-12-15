@@ -19,13 +19,21 @@ public class UploadServlet extends HttpServlet {
     private int maxFileSize = 100 * 1024;
     private int maxMemSize = 4 * 1024;
     private File file ;
-    //Un simple activador
-    private boolean bool = false;
 
     public void init( ){
         // Get the file location where it would be stored.
         filePath = getServletContext().getInitParameter("file-upload");
     }
+
+    /**
+     *
+     *Funcio que ens mostra, si compleix els requisits, quin usuari ha pujat l'arxiu i el nom de l'arxiu pujat.
+     *
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws java.io.IOException
+     */
     public void doPost(HttpServletRequest request,
                        HttpServletResponse response)
             throws ServletException, java.io.IOException {
@@ -41,11 +49,6 @@ public class UploadServlet extends HttpServlet {
         }
         email = email.substring(0,arroba);
 
-        if (!bool == true){
-            filePath += email + "/";
-
-            bool = true;
-        }
 
         // Check that we have a file upload request
         isMultipart = ServletFileUpload.isMultipartContent(request);
@@ -105,7 +108,8 @@ public class UploadServlet extends HttpServlet {
                                 fileName.substring(fileName.lastIndexOf("\\")+1)) ;
                     }
                     fi.write( file ) ;
-                    out.println("Uploaded Filename: " + fileName + "<br>");
+                    out.println( email + "ha pujat l'arxiu: " + fileName + "<br>");
+                    out.println("<a href='fileupload.jsp'>Tornar enrere </a>");
                 }
             }
             out.println("</body>");

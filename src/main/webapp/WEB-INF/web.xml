@@ -21,30 +21,6 @@
         </init-param>
     </filter>
 
-    <!-- Filtres d'autentificacio com usuari (Mappings) -->
-    <filter-mapping>
-        <filter-name>Filters.LogFilter</filter-name>
-        <url-pattern>/index.jsp</url-pattern>
-    </filter-mapping>
-
-    <!-- Files Servlet -->
-    <filter-mapping>
-        <filter-name>Files</filter-name>
-        <url-pattern>/Servlet.Files</url-pattern>
-    </filter-mapping>
-
-    <!-- Upload Servlet -->
-    <filter-mapping>
-        <filter-name>UploadServlet</filter-name>
-        <url-pattern>/Servlet.UploadServlet</url-pattern>
-    </filter-mapping>
-
-    <!-- Tancar Sessio -->
-    <filter-mapping>
-        <filter-name>LogOut</filter-name>
-        <url-pattern>/Logs.LogOut</url-pattern>
-    </filter-mapping>
-
     <!-- Servlets -->
 
     <!-- Upload Servlet -->
@@ -94,7 +70,7 @@
     <!-- Tancar Sessio -->
     <servlet-mapping>
         <servlet-name>LogOut</servlet-name>
-        <url-pattern>/Servlet.LogOut</url-pattern>
+        <url-pattern>/Logs.LogOut</url-pattern>
     </servlet-mapping>
 
     <!-- Configuracio de l'usuari per a que duri 15 minuts-->

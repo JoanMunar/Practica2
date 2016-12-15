@@ -3,6 +3,10 @@ package Logs;
 /**
  * Created by jmunarb on 22/11/16.
  */
+
+/**
+ * Funcio emprada per obtenir la contrasenya i el email de l'usuari introduits en el formulari.
+ */
 public class User {
     private String name;
     private String pass;
