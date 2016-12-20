@@ -20,24 +20,25 @@
             <param-value>Initialization Paramter</param-value>
         </init-param>
     </filter>
+
+    <!-- Servlets -->
+
+    <!-- Iniciar Sessio -->
+    <servlet>
+        <servlet-name>logs.LogIn</servlet-name>
+        <servlet-class>logs.LogIn</servlet-class>
+    </servlet>
+
     <!--Filtre mapping -->
     <filter-mapping>
         <filter-name>filters.LogFilter</filter-name>
         <servlet-name>filters.LogFilter</servlet-name>
     </filter-mapping>
 
-    <!-- Servlets -->
-
     <!-- Upload servlet -->
     <servlet>
         <servlet-name>servlet.UploadServlet</servlet-name>
         <servlet-class>servlet.UploadServlet</servlet-class>
-    </servlet>
-
-    <!-- Iniciar Sessio -->
-    <servlet>
-        <servlet-name>logs.LogIn</servlet-name>
-        <servlet-class>logs.LogIn</servlet-class>
     </servlet>
 
     <!-- Files servlet -->
@@ -50,12 +51,6 @@
     <servlet>
         <servlet-name>LogOut</servlet-name>
         <servlet-class>logs.LogOut</servlet-class>
-    </servlet>
-
-    <!-- Filter -->
-    <servlet>
-        <servlet-name>filters.LogFilter</servlet-name>
-        <servlet-class>filters.LogFilter</servlet-class>
     </servlet>
 
     <!-- servlet Mappings -->
@@ -82,12 +77,6 @@
     <servlet-mapping>
         <servlet-name>LogOut</servlet-name>
         <url-pattern>/logs.LogOut</url-pattern>
-    </servlet-mapping>
-
-    <!-- Filter -->
-    <servlet-mapping>
-        <servlet-name>filters.LogFilter</servlet-name>
-        <url-pattern>/filters.LogFilter</url-pattern>
     </servlet-mapping>
 
     <!-- Configuracio de l'usuari per a que duri 15 minuts-->
