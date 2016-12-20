@@ -13,8 +13,8 @@
 
     <!-- Filtre d'autentifiacio com usuari -->
     <filter>
-        <filter-name>Filters.LogFilter</filter-name>
-        <filter-class>Filters.LogFilter</filter-class>
+        <filter-name>filters.LogFilter</filter-name>
+        <filter-class>filters.LogFilter</filter-class>
         <init-param>
             <param-name>test-param</param-name>
             <param-value>Initialization Paramter</param-value>
@@ -22,63 +22,73 @@
     </filter>
     <!--Filtre mapping -->
     <filter-mapping>
-        <filter-name>Filters.LogFilter</filter-name>
-        <servlet-name>Filters.LogFilter</servlet-name>
+        <filter-name>filters.LogFilter</filter-name>
+        <servlet-name>filters.LogFilter</servlet-name>
     </filter-mapping>
 
     <!-- Servlets -->
 
-    <!-- Upload Servlet -->
+    <!-- Upload servlet -->
     <servlet>
-        <servlet-name>Servlet.UploadServlet</servlet-name>
-        <servlet-class>Servlet.UploadServlet</servlet-class>
+        <servlet-name>servlet.UploadServlet</servlet-name>
+        <servlet-class>servlet.UploadServlet</servlet-class>
     </servlet>
 
     <!-- Iniciar Sessio -->
     <servlet>
-        <servlet-name>Logs.LogIn</servlet-name>
-        <servlet-class>Logs.LogIn</servlet-class>
+        <servlet-name>logs.LogIn</servlet-name>
+        <servlet-class>logs.LogIn</servlet-class>
     </servlet>
 
-    <!-- Files Servlet -->
+    <!-- Files servlet -->
     <servlet>
         <servlet-name>Files</servlet-name>
-        <servlet-class>Servlet.Files</servlet-class>
+        <servlet-class>servlet.Files</servlet-class>
     </servlet>
 
     <!-- Tancar Sessio -->
     <servlet>
         <servlet-name>LogOut</servlet-name>
-        <servlet-class>Logs.LogOut</servlet-class>
+        <servlet-class>logs.LogOut</servlet-class>
     </servlet>
 
-    <!-- Servlet Mappings -->
-
-    <!-- Upload Servlet -->
-    <servlet-mapping>
-        <servlet-name>Servlet.UploadServlet</servlet-name>
-        <url-pattern>/Servlet.UploadServlet</url-pattern>
-    </servlet-mapping>
-
-    <!-- Iniciar Sessio -->
-    <servlet-mapping>
-        <servlet-name>Logs.LogIn</servlet-name>
-        <url-pattern>/Logs.LogIn</url-pattern>
-    </servlet-mapping>
-
-    <!-- Files Servlet -->
-    <servlet-mapping>
-        <servlet-name>Files</servlet-name>
-        <url-pattern>/Servlet.Files</url-pattern>
-    </servlet-mapping>
-
-    <!-- Tancar Sessio -->
-    <servlet-mapping>
-        <servlet-name>LogOut</servlet-name>
-        <url-pattern>/Logs.LogOut</url-pattern>
-    </servlet-mapping>
     <!-- Filter -->
+    <servlet>
+        <servlet-name>filters.LogFilter</servlet-name>
+        <servlet-class>filters.LogFilter</servlet-class>
+    </servlet>
 
+    <!-- servlet Mappings -->
+
+    <!-- Upload servlet -->
+    <servlet-mapping>
+        <servlet-name>servlet.UploadServlet</servlet-name>
+        <url-pattern>/servlet.UploadServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Iniciar Sessio -->
+    <servlet-mapping>
+        <servlet-name>logs.LogIn</servlet-name>
+        <url-pattern>/logs.LogIn</url-pattern>
+    </servlet-mapping>
+
+    <!-- Files servlet -->
+    <servlet-mapping>
+        <servlet-name>Files</servlet-name>
+        <url-pattern>/servlet.Files</url-pattern>
+    </servlet-mapping>
+
+    <!-- Tancar Sessio -->
+    <servlet-mapping>
+        <servlet-name>LogOut</servlet-name>
+        <url-pattern>/logs.LogOut</url-pattern>
+    </servlet-mapping>
+
+    <!-- Filter -->
+    <servlet-mapping>
+        <servlet-name>filters.LogFilter</servlet-name>
+        <url-pattern>/filters.LogFilter</url-pattern>
+    </servlet-mapping>
 
     <!-- Configuracio de l'usuari per a que duri 15 minuts-->
     <session-config>

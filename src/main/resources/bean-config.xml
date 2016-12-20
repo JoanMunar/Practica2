@@ -3,17 +3,17 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
 	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
 
-    <bean id="user1" class="Logs.User">
+    <bean id="user1" class="logs.User">
         <constructor-arg value="joan"/>
         <constructor-arg value="1234"/>
         <constructor-arg value="joan@gmail.com"/>
     </bean>
-    <bean id="user2" class="Logs.User">
+    <bean id="user2" class="logs.User">
         <constructor-arg value="xavi"/>
         <constructor-arg value="1234"/>
         <constructor-arg value="xavi@gmail.com"/>
     </bean>
-    <bean id="user3" class="Logs.User">
+    <bean id="user3" class="logs.User">
         <constructor-arg value="pep"/>
         <constructor-arg value="1234"/>
         <constructor-arg value="pep@gmail.com"/>

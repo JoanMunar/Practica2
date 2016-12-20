@@ -1,4 +1,4 @@
-package Logs;
+package logs;
 
 import java.io.*;
 import javax.servlet.*;

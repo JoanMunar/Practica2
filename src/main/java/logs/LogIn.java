@@ -1,4 +1,4 @@
-package Logs;// Import required java libraries
+package logs;// Import required java libraries
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

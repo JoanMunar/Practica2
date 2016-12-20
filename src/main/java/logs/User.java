@@ -1,4 +1,4 @@
-package Logs;
+package logs;
 
 /**
  * Created by jmunarb on 22/11/16.

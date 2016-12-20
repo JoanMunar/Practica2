@@ -1,4 +1,4 @@
-package Servlet;// Import required java libraries
+package servlet;// Import required java libraries
 import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
@@ -57,7 +57,7 @@ public class UploadServlet extends HttpServlet {
         if( !isMultipart ){
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet upload</title>");
+            out.println("<title>servlet upload</title>");
             out.println("</head>");
             out.println("<body>");
             out.println("<p>No file uploaded</p>");
@@ -85,7 +85,7 @@ public class UploadServlet extends HttpServlet {
 
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet upload</title>");
+            out.println("<title>servlet upload</title>");
             out.println("</head>");
             out.println("<body>");
             while ( i.hasNext () )

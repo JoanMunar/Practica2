@@ -1,8 +1,6 @@
-package Filters;// Import required java libraries
-import java.io.*;
+package filters;// Import required java libraries
 import javax.servlet.*;
 import javax.servlet.http.*;
-import java.util.*;
 
 // Implements Filter class
 public class LogFilter implements Filter  {
