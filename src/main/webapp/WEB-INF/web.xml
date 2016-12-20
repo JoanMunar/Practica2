@@ -20,6 +20,11 @@
             <param-value>Initialization Paramter</param-value>
         </init-param>
     </filter>
+    <!--Filtre mapping -->
+    <filter-mapping>
+        <filter-name>Filters.LogFilter</filter-name>
+        <servlet-name>Filters.LogFilter</servlet-name>
+    </filter-mapping>
 
     <!-- Servlets -->
 
@@ -72,6 +77,8 @@
         <servlet-name>LogOut</servlet-name>
         <url-pattern>/Logs.LogOut</url-pattern>
     </servlet-mapping>
+    <!-- Filter -->
+
 
     <!-- Configuracio de l'usuari per a que duri 15 minuts-->
     <session-config>
